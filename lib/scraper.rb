@@ -38,6 +38,7 @@ class Scraper
     facebook = nil
     github = nil
     linkedin = nil
+    twitter = nil 
     social.each do |icon|
 
       chopped = icon["href"]
