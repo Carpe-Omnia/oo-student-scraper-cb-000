@@ -43,7 +43,7 @@ class Scraper
 
       chopped = icon["href"]
       puts chopped
-      chopped = self.edit(icon, "https")
+      chopped = self.edit(chopped, "https")
       chopped = self.edit(chopped, "http")
       chopped = self.edit(chopped, "www.")
       chopped = self.edit(chopped, "::/")
