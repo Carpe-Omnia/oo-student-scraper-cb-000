@@ -72,8 +72,8 @@ class Scraper
         #:location=>location,
         :profile_quote=>profile_quote,
         :bio=>bio
-      # :name=>name,
-       #:profile_url=>profile_url,
+        #:name=>name,
+        #:profile_url=>profile_url,
      }
     save = value
     value = value.reject { |key, data| data == nil }
