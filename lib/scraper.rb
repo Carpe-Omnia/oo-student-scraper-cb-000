@@ -56,7 +56,7 @@ class Scraper
         linkedin = icon["href"]
       elsif chopped[0] == "i"
         twitter = icon["href"]
-      else 
+      else
         blog = icon["href"]
       end
     end
