@@ -19,12 +19,12 @@ class Scraper
   end
   def self.edit(input, removal)
     save = input
-    puts "save #{save}"
+    #puts "save #{save}"
     check = input.delete(removal)
     if check == nil
       check = save
     end
-    puts "check #{check}"
+    #puts "check #{check}"
     check
   end
 
@@ -43,7 +43,7 @@ class Scraper
     social.each do |icon|
 
       chopped = icon["href"]
-      puts chopped
+      #puts chopped
       chopped = self.edit(chopped, "https")
       chopped = self.edit(chopped, "http")
       chopped = self.edit(chopped, "www.")
