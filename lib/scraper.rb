@@ -38,7 +38,7 @@ class Scraper
     facebook = nil
     github = nil
     linkedin = nil
-    twitter = nil 
+    twitter = nil
     social.each do |icon|
 
       chopped = icon["href"]
@@ -53,6 +53,8 @@ class Scraper
         github = icon["href"]
       elsif chopped[0] == "l"
         linkedin = icon["href"]
+      elsif chopped[0] == "i"
+        twitter = icon["href"]  
       end
     end
     details = doc.css(".details-container")
