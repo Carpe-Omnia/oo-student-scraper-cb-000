@@ -72,6 +72,6 @@ class Scraper
   end
 
 end
-testo = Scraper.scrape_profile_page("./fixtures/student-site/students/ashley-muller.html")
+testo = Scraper.scrape_profile_page("./fixtures/student-site/students/joe-burgess.html")
 puts testo
 puts testo.class
