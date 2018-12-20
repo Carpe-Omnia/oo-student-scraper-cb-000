@@ -75,10 +75,7 @@ class Scraper
        :facebook=>facebook
      }
     save = value
-    value = value.compact!
-    if value == nil
-      value = save
-    end   
+    value = value.reject { |key, value| value.empty? }
     value
 
   end
