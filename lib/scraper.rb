@@ -67,8 +67,8 @@ class Scraper
       :github => github,
       :facebook => facebook
     }
-    #value
-      github
+    value
+      
   end
 
 end
