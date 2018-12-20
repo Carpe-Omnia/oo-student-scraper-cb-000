@@ -43,7 +43,7 @@ class Scraper
     social.each do |icon|
 
       chopped = icon["href"]
-      #puts chopped
+      puts chopped
       chopped = self.edit(chopped, "https")
       chopped = self.edit(chopped, "http")
       chopped = self.edit(chopped, "www.")
