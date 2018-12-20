@@ -71,7 +71,9 @@ class Scraper
       :bio => bio,
       :linkedin => linkedin,
       :github => github,
-      :facebook => facebook
+      :facebook => facebook,
+      :twitter => twitter,
+      :blog => blog
     }
     value
 
