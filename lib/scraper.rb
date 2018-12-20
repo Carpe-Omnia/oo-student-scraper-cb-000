@@ -18,8 +18,10 @@ class Scraper
     ray
   end
   def self.edit(input, removal)
-    save = input 
+    save = input
+    puts save 
     check = input.delete(removal)
+    puts check 
     if check == nil
       check = save
     end
