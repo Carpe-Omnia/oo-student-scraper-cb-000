@@ -74,8 +74,11 @@ class Scraper
        :blog=>blog,
        :facebook=>facebook
      }
-    save = value  
+    save = value
     value = value.compact!
+    if value == nil
+      value = save
+    end   
     value
 
   end
