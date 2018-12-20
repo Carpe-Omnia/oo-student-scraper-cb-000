@@ -69,7 +69,7 @@ class Scraper
         :github=>github,
         :blog=>blog,
         :facebook=>facebook,
-        :location=>location,
+        #:location=>location,
         :profile_quote=>profile_quote,
         :bio=>bio
       # :name=>name,
