@@ -63,16 +63,17 @@ class Scraper
     details = doc.css(".details-container")
     bio = details.css(".description-holder")
     bio = bio.css("p").text
-    value = {:name=>name,
-       :location=>location,
-       :profile_quote=>profile_quote,
-       :profile_url=>profile_url,
-       :bio=>bio,
-       :linkedin=>linkedin,
-       :github=>github,
-       :twitter=>twitter,
-       :blog=>blog,
-       :facebook=>facebook
+    value = {
+        :twitter=>twitter,
+        :linkedin=>linkedin,
+        :github=>github,
+        :blog=>blog,
+        :facebook=>facebook,
+        :profile_quote=>profile_quote,
+        :bio=>bio,
+       :location=>location
+      # :name=>name,
+       #:profile_url=>profile_url,
      }
     save = value
     value = value.reject { |key, data| data == nil }
