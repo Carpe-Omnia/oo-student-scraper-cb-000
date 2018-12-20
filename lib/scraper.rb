@@ -68,7 +68,7 @@ class Scraper
       :facebook => facebook
     }
     value
-      
+
   end
 
 end
