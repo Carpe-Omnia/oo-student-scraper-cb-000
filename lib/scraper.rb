@@ -46,11 +46,11 @@ class Scraper
       chopped = self.edit(chopped, "http")
       chopped = self.edit(chopped, "www.")
       chopped = self.edit(chopped, "::/")
-      if chopped["href"][0] == "f"
+      if chopped[0] == "f"
         facebook = icon["href"]
-      elsif chopped["href"][0] == "g"
+      elsif chopped[0] == "g"
         github = icon["href"]
-      elsif chopped["href"][0] == "l"
+      elsif chopped[0] == "l"
         linkedin = icon["href"]
       end
     end
