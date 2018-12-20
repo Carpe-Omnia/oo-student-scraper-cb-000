@@ -24,6 +24,7 @@ class Scraper
     if check == nil
       check = save
     end
+    puts "check #{check}"
     check
   end
 
