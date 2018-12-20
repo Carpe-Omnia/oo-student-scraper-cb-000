@@ -21,11 +21,9 @@ class Scraper
     save = input
     puts save
     check = input.delete(removal)
-    puts check
     if check == nil
       check = save
     end
-    puts check
     check
   end
 
