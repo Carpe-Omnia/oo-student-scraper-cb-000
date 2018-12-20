@@ -54,7 +54,9 @@ class Scraper
       elsif chopped[0] == "l"
         linkedin = icon["href"]
       elsif chopped[0] == "i"
-        twitter = icon["href"]  
+        twitter = icon["href"]
+      elsif chopped[-1] == "/"
+        blog = icon["href"]  
       end
     end
     details = doc.css(".details-container")
