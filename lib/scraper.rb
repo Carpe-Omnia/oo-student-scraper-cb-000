@@ -74,7 +74,7 @@ class Scraper
        :blog=>blog,
        :facebook=>facebook
      }
-
+    value.compact! 
     value
 
   end
