@@ -71,7 +71,7 @@ class Scraper
         :facebook=>facebook,
         :profile_quote=>profile_quote,
         :bio=>bio,
-       :location=>location
+        :location=>location
       # :name=>name,
        #:profile_url=>profile_url,
      }
