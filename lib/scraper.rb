@@ -19,7 +19,7 @@ class Scraper
   end
   def self.edit(input, removal)
     save = input
-    puts save
+    puts "save #{save}"
     check = input.delete(removal)
     if check == nil
       check = save
