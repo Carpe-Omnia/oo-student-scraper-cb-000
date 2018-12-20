@@ -75,7 +75,7 @@ class Scraper
        :facebook=>facebook
      }
     save = value
-    value = value.reject { |key, value| value.empty? }
+    value = value.reject { |key, data| data.empty? }
     value
 
   end
